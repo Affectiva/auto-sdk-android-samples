@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/_10dp"
+                android:text="@string/dialog_title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_title_text_size" />
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingTop="@dimen/_25dp"
+                android:paddingRight="@dimen/_10dp"
+                android:paddingBottom="@dimen/_25dp"
+                android:text="@string/dialog_message"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/dialog_message_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_5dp">
+
+                <Button
+                    android:id="@+id/upload_new_video_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="@dimen/dialog_button_padding_x"
+                    android:paddingRight="@dimen/dialog_button_padding_x"
+                    android:visibility="gone"
+                    android:stateListAnimator="@null"
+                    android:text="@string/upload_new_video"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialog_button_text_size" />
+
+                <Button
+                    android:id="@+id/dismiss_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dialog_button_padding_x"
+                    android:paddingRight="@dimen/dialog_button_padding_x"
+                    android:stateListAnimator="@null"
+                    android:text="@string/close"
+                    android:onClick="onDismissClicked"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/dialog_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

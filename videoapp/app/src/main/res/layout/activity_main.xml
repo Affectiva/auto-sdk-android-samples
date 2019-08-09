@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="@dimen/settings_button_size"
+        android:layout_height="@dimen/settings_button_size"
+        android:layout_margin="@dimen/settings_button_margin"
+        android:background="@null"
+        android:contentDescription="@string/settings_content_description"
+        android:onClick="settingsButtonClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/settings_button_selector"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/upload_video_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/upload_button_height"
+        android:background="@color/colorPrimary"
+        android:onClick="uploadVideoButtonClick"
+        android:paddingLeft="@dimen/upload_button_padding_x"
+        android:paddingTop="@dimen/upload_button_padding_y"
+        android:paddingRight="@dimen/upload_button_padding_x"
+        android:paddingBottom="@dimen/upload_button_padding_y"
+        android:stateListAnimator="@null"
+        android:text="@string/upload_video"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/upload_button_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/insufficient_permissions_panel" />
+
+</android.support.constraint.ConstraintLayout>

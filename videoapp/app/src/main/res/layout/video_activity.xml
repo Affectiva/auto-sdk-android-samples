@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:keepScreenOn="true">
+
+    <com.affectiva.affdexme.FrameDrawer
+        android:id="@+id/baseSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/video_seekBar"
+            style="@style/greenProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_marginRight="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:indeterminate="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stop_video_button"
+        android:layout_width="wrap_content"
+        android:onClick="onStopVideoButtonClicked"
+        android:layout_height="@dimen/upload_button_height"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/upload_button_padding_x"
+        android:paddingTop="@dimen/upload_button_padding_y"
+        android:paddingRight="@dimen/upload_button_padding_x"
+        android:paddingBottom="@dimen/upload_button_padding_y"
+        android:stateListAnimator="@null"
+        android:text="@string/stop"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/upload_button_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

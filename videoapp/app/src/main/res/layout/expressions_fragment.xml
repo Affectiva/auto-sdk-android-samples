@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:background="@color/transparent_overlay"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5dp"
+                android:text="@string/expressions_blink"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/blink_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5dp"
+                android:text="@string/expressions_blink_rate"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/blink_rate_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_overlay">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_smile"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/smile_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_brow_raise"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/brow_raise_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_brow_furrow"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/brow_furrow_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_nose_wrinkle"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/nose_wrinkle_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_upper_lip_raise"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/upper_lip_raise_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_mouth_open"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/mouth_open_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_eye_closure"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/eye_closure_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_cheek_raise"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/cheek_raise_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/expressions_yawn"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/metrics_title_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/yawn_progressBar"
+                style="@style/greenProgressBar"
+                android:layout_width="@dimen/metrics_progressbar_width"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

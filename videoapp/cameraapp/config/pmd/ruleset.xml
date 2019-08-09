@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="All Java Rules"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>PMD rules for Affectiva SDK</description>
+    <rule ref="category/java/bestpractices.xml">
+        <exclude name="JUnitAssertionsShouldIncludeMessage" />
+        <exclude name="JUnitTestContainsTooManyAsserts" />
+        <exclude name="GuardLogStatement" />
+    </rule>
+    <rule ref="category/java/codestyle.xml">
+        <exclude name="LongVariable" />
+        <exclude name="ShortVariable" />
+        <exclude name="AtLeastOneConstructor" />
+    </rule>
+    <rule ref="category/java/design.xml">
+        <exclude name="LawOfDemeter" />
+    </rule>
+    <rule ref="category/java/documentation.xml">
+        <exclude name="CommentSize" />
+    </rule>
+    <rule ref="category/java/errorprone.xml">
+        <exclude name="BeanMembersShouldSerialize" />
+    </rule>
+    <rule ref="category/java/multithreading.xml" />
+    <rule ref="category/java/performance.xml" />
+    <rule ref="category/java/security.xml" />
+
+    <!--Reconfigured rules-->
+    <rule ref="category/java/codestyle.xml/LongVariable">
+        <properties>
+            <property name="minimum" value="30" />
+        </properties>
+    </rule>
+    <rule ref="category/java/codestyle.xml/ShortVariable">
+        <properties>
+            <property name="minimum" value="2" />
+        </properties>
+    </rule>
+    <rule ref="category/java/documentation.xml/CommentRequired">
+        <properties>
+            <property name="fieldCommentRequirement" value="Ignored" />
+        </properties>
+    </rule>
+    <rule ref="category/java/codestyle.xml/LinguisticNaming">
+        <properties>
+            <property name="checkSetters" value="false" />
+        </properties>
+    </rule>
+</ruleset>
